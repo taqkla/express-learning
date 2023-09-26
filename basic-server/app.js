@@ -24,7 +24,7 @@ server.get( '/users/:id', ( req, res ) =>
 {
     const userId = req.params.id;
     const user = users.filter( user => user.id == userId );
-    user.length == 0 ? res.send( "Not Found" ) : res.send( user );
+    user.length == 0 ? res.sendStatus( 404 ) : res.send( user );
 } );
 
 server.post( '/users', ( req, res ) =>
