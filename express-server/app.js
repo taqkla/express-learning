@@ -2,7 +2,7 @@ const express = require( 'express' );
 const fs = require( 'fs' );
 const path = require( 'path' );
 const server = express(); // it creates a server
-const port = 3000;
+const port = 3001;
 
 server.use( express.json() );
 
