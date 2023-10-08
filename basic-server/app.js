@@ -41,3 +41,34 @@ server.listen( port, () =>
 {
     console.log( `Server started successfully on ${ port }` );
 } );
+
+
+
+// const express = require('express');
+// const app = express();
+// const path = require('path');
+// const PORT = 3000;
+// const fs = require( 'fs' );
+// const users = JSON.parse(fs.readFileSync('users.json', 'utf-8')).users;
+
+// app.get('/', (req, res) => {
+//     // res.send('<h1>Hello word</h1>');
+//     console.log(users);
+//     res.sendFile(path.join(__dirname, 'index.html'));
+// })
+
+// app.get('/users', (req, res) => {
+
+//     const userId = req.query.userId;
+//     // res.send(users.filter((user) => {
+//     //     user.id == userId
+//     // }));
+//     // console.log(req.query.userId);
+//     res.send(users);
+//     // console.log(users);
+//     // res.sendFile(path.join(__dirname, 'index.html'));
+// })
+
+// app.listen(PORT, () => {
+//     console.log(`Server Started Successfully on ${PORT}`);
+// })
